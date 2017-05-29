@@ -1,0 +1,9 @@
+{{#if showError}}
+  <h4>Result: {{result}}</h4>
+  <h4>stdout: {{stdout}}</h4>
+  <h4>stderr: {{stderr}}</h4>
+  <h4>Error: {{errorMessage}}</h4>
+{{/if}}
+
+{{textarea value=source}}
+<button {{action "sendRequest"}}>Submit</button>
